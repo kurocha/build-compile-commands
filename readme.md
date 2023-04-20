@@ -6,8 +6,6 @@ This package provides a target for generating `compile_commands.json`.
 
 ```ruby
 define_target "my-project" do |target|
-	target.depends :platform
-	
 	target.depends "Language/C++17"
 	target.depends "Build/Compile/Commands"
 	
